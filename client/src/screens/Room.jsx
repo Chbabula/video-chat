@@ -124,8 +124,8 @@ const RoomPage = () => {
   },[myStream])
   return (
     <div className="room-container">
-      <h1>Room Page</h1>
-      <h4>{remoteSocketId ? "Connected" : "No one in room"}</h4>
+      <h1 className="room-h1">Room Page</h1>
+      <h4 className="room-h4">{remoteSocketId ? "Connected" : "No one in room"}</h4>
      
       <div className="button-container">
         {myStream && <button onClick={sendStreams}>Send Stream</button>}
@@ -135,7 +135,7 @@ const RoomPage = () => {
       <div className="video-container">
         {myStream && (
           <div className="video-wrapper">
-            <h1>My Stream</h1>
+            <h1 className="room-h1">My Stream</h1>
             <ReactPlayer
               playing
               muted
@@ -148,7 +148,7 @@ const RoomPage = () => {
         )}
         {remoteStream && (
           <div className="video-wrapper">
-            <h1>Remote Stream</h1>
+            <h1 className="room-h1">Remote Stream</h1>
             
             <ReactPlayer
               playing

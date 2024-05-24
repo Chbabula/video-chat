@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background-color: #282c34;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -15,13 +17,53 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-1{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 20%;
+  gap: 10px;
+}
+
+.logo {
+width: 100%; 
+height: 100%;
+align-items: center;
+}
+.logo-text{
+  color: #fff;
+  width: 100%;
+  font-size: 15px+8;
+  font-weight: 700;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-items: center;
+  animation: fadeInOut 3s ease infinite;
+}
+
+.app-name {
+  font-size: 24px;
+  color: #fff;
+  /* margin-right: 150px; */
+  
 }
 
 .App-link {
@@ -34,5 +76,17 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; 
+  }
+  50% {
+    opacity: 1; 
+  }
+  100% {
+    opacity: 0; 
   }
 }

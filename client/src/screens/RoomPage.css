@@ -1,10 +1,21 @@
 .room-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   height: 100vh;
+  width: 100%;
+}
+.room-h1{
+  color: #fff;
+  padding-top: 55px;
+}
+.room-h4{
+  color: #fff;
+ 
+
 }
 
 .button-container {

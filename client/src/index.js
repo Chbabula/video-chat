@@ -11,6 +11,19 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <SocketProvider>
+        <div className="header">
+          <div className="header-1">
+            <img
+              src="https://cdn.iconscout.com/icon/premium/png-512-thumb/google-meet-7520865-7197085.png?f=webp&w=256"
+              alt="Logo"
+              className="logo"
+            />
+            <p className="logo-text">Meet Your Frindes</p>
+          </div>
+          <div className="header-2">
+            <h1 className="app-name">Matalu Aduko</h1>
+          </div>
+        </div>
         <App />
       </SocketProvider>
     </BrowserRouter>
